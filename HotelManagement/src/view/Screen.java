@@ -1,17 +1,24 @@
 package view;
-
 import javax.swing.*;
-import java.awt.*;
-public class Screen extends JFrame {
 
-    public static final int WIDTH = 500;
-    public static int HEIGHT = 800;
+
+public class Screen extends JPanel {
+    private JButton backButton;
 
     public Screen(){
-        setTitle("Hotel Management System");
-        setSize(WIDTH,HEIGHT);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setLocationRelativeTo(null);
         setLayout(null);
+        setBounds(0,0, DefaultScreen.WIDTH, DefaultScreen.HEIGHT);
+
+        ImageIcon backButtonIcon = new ImageIcon("HotelManagement/lib/back.png");
+        backButton =  new JButton(backButtonIcon);
+        backButton.setBounds(1540,20,backButtonIcon.getIconWidth(),backButtonIcon.getIconHeight());
+        backButton.setContentAreaFilled(false);
+        backButton.setBorderPainted(false);
+        add(backButton);
+
+
+
     }
+
+    public JButton getBackButton() {return backButton;};
 }

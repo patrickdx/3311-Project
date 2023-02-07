@@ -4,36 +4,62 @@ import javax.swing.*;
 import java.awt.*;
 
 
-public class MainMenu extends JFrame {
+public class MainMenu extends Screen {
+    private JLabel titleLabel = new JLabel("Welcome back user");
+    private JButton customerButton = new JButton();
+    private JButton roomButton = new JButton();
+    private JButton requestButton = new JButton();
 
 
 
     public MainMenu(){
-            JButton customerButton = new JButton();
-            JButton roomButton = new JButton();
-            JButton requestButton = new JButton();
 
+
+
+            titleLabel.setBounds(70,50,700,100);
+            titleLabel.setForeground(Color.white);
+            titleLabel.setFont(new Font("Calibri", Font.BOLD, 50));
+            add(titleLabel);
+
+            ImageIcon customerIcon = new ImageIcon("HotelManagement/lib/customer_icon.png");
+            ImageIcon roomIcon = new ImageIcon("HotelManagement/lib/room_icon.png");
+            ImageIcon requestIcon = new ImageIcon("HotelManagement/lib/request_icon.png");
+
+            customerButton = new JButton(customerIcon);
             customerButton.setText("Customers");
+            customerButton.setBorder(null);
+            customerButton.setBounds(300,500,250,125);
+            add(customerButton);
+
+            roomButton = new JButton(roomIcon);
             roomButton.setText("Rooms");
+            roomButton.setBorder(null);
+            roomButton.setBounds(700,400,250,125);
+            add(roomButton);
+
+            requestButton = new JButton(requestIcon);
             requestButton.setText("Requests");
+            requestButton.setBorder(null);
+            requestButton.setBounds(700,400,250,125);
+            add(requestButton);
 
-            customerButton.setFocusable(false);
-            roomButton.setFocusable(false);
-            requestButton.setFocusable(false);
 
-            customerButton.setBounds(125,400,250,100);
-            roomButton.setBounds(125,200,250,100);
-            requestButton.setBounds(125,0,250,100);
 
-             this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-             this.setLayout(null);
-             this.setSize(500,600);
-             this.setVisible(true);
-             this.setTitle("Hotel Management");
-             this.add(customerButton);
-             this.add(roomButton);
-             this.add(requestButton);
+
+
+
+
+
+
+
+
+
          }
+
+    public JLabel getTitleLabel() {return titleLabel;}
+    public JButton getCustomerButton(){return customerButton;}
+    public JButton getRoomButton(){return roomButton;}
+    public JButton getGetCustomerButton() {return requestButton;}
 
 
 

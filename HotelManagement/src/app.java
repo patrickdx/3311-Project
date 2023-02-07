@@ -1,15 +1,27 @@
+import something.Main;
+import view.DefaultScreen;
 import view.MainMenu;
+import view.Screen;
+
+import java.awt.*;
 
 public class app {
-    public static void main(String[] args) {
-        //Schedule a job for the event-dispatching thread:
+    private static DefaultScreen defaultScreen;
+
+
+    public static  void main(String[] args) {
+
         //creating and showing this application's GUI.
-        javax.swing.SwingUtilities.invokeLater(new Runnable() {
 
-            public void run() {
-                new MainMenu();
 
-            }
-        });
+        defaultScreen = new DefaultScreen();
+        MainMenu menu =  new MainMenu();
+        defaultScreen.add(menu);
+        defaultScreen.setVisible(true);
+
+
+
+
+
     }
 }
