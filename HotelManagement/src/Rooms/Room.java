@@ -1,14 +1,11 @@
 package Rooms;
 
-import something.Person;
-import java.time.LocalDate;
-import java.util.List;
-
 public class Room { // single, double, suites, presidential_suites ...
     public RoomType type;   // rate/size is inferred from RoomType
     public int room_id;
 
-    public Room(RoomType type){
+    public Room(int i, RoomType type){
+        this.room_id = i;
         this.type = type;
     }
     public RoomType getType() {

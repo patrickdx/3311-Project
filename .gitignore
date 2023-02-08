@@ -1,0 +1,4 @@
+*.xml
+*.class
+*.imi
+.DS_Store

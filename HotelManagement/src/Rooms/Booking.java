@@ -41,4 +41,6 @@ public class Booking implements RoomInterface {
     public int getBookingID(){
         return this.booking_id;
     }
+
+    public LocalDate getDateBooked(){return this.dateBooked;}
 }
