@@ -1,4 +1,5 @@
 import something.Main;
+import view.CustomerScreen;
 import view.DefaultScreen;
 import view.MainMenu;
 import view.Screen;
@@ -15,8 +16,8 @@ public class app {
 
 
         defaultScreen = new DefaultScreen();
-        MainMenu menu =  new MainMenu();
-        defaultScreen.add(menu);
+        CustomerScreen screen =  new CustomerScreen();
+        defaultScreen.add(screen);
         defaultScreen.setVisible(true);
 
 

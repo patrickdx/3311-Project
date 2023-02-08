@@ -22,7 +22,7 @@ public class MainMenu extends Screen {
 
     public MainMenu(){
 
-            setBackground(new Color(90, 148, 161));
+            setBackground(new Color(141, 203, 230));
 
             titleLabel.setBounds(70,50,700,100);
             titleLabel.setForeground(Color.white);
@@ -47,7 +47,7 @@ public class MainMenu extends Screen {
             roomButton.setText("Rooms");
             roomButton.setOpaque(true);
             roomButton.setFont(FONT);
-            roomButton.setBackground(new Color(54, 47, 217));
+            roomButton.setBackground(new Color(157, 241, 223));
             roomButton.setForeground(Color.WHITE);
             roomButton.setBorder(null);
             roomButton.setBounds(600,400,250,125);
@@ -57,7 +57,7 @@ public class MainMenu extends Screen {
             requestButton.setText("Requests");
             requestButton.setOpaque(true);
             requestButton.setFont(FONT);
-            requestButton.setBackground(new Color(54, 47, 217));
+            requestButton.setBackground(new Color(255, 234, 32));
             requestButton.setForeground(Color.WHITE);
             requestButton.setBorder(null);
             requestButton.setBounds(1000,400,250,125);
