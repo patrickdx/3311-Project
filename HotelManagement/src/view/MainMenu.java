@@ -40,7 +40,7 @@ public class MainMenu extends Screen {
             customerButton.setBackground(new Color(54, 47, 217));
             customerButton.setForeground(Color.WHITE);
             customerButton.setBorder(null);
-            customerButton.setBounds(200,400,250,125);
+            customerButton.setBounds(200,200,250,125);
             add(customerButton);
 
 
@@ -50,7 +50,7 @@ public class MainMenu extends Screen {
             roomButton.setBackground(new Color(157, 241, 223));
             roomButton.setForeground(Color.WHITE);
             roomButton.setBorder(null);
-            roomButton.setBounds(600,400,250,125);
+            roomButton.setBounds(200,400,250,125);
             add(roomButton);
 
 
@@ -60,7 +60,7 @@ public class MainMenu extends Screen {
             requestButton.setBackground(new Color(255, 234, 32));
             requestButton.setForeground(Color.WHITE);
             requestButton.setBorder(null);
-            requestButton.setBounds(1000,400,250,125);
+            requestButton.setBounds(200,600,250,125);
             add(requestButton);
 
 

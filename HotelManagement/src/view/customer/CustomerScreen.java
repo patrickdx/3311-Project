@@ -1,9 +1,12 @@
-package view;
+package view.customer;
+import view.DefaultScreen;
+import view.Screen;
+
 import javax.swing.*;
 
 import java.awt.*;
 
-public class CustomerScreen extends Screen{
+public class CustomerScreen extends Screen {
     private JLabel titleLabel = new JLabel("Customer Options");
     private JButton addCustomerButton = new JButton();
     private JButton removeCustomerButton = new JButton();
@@ -13,7 +16,7 @@ public class CustomerScreen extends Screen{
     public CustomerScreen(){
         setBackground(new Color(141, 203, 230));
 
-        titleLabel.setBounds(70,50,700,100);
+        titleLabel.setBounds(DefaultScreen.WIDTH/2 - 200,50,700,100);
         titleLabel.setForeground(Color.white);
         titleLabel.setFont(new Font("Calibri", Font.BOLD, 50));
         add(titleLabel);
@@ -24,7 +27,7 @@ public class CustomerScreen extends Screen{
         addCustomerButton.setBackground(new Color(54, 47, 217));
         addCustomerButton.setForeground(Color.white);
         addCustomerButton.setBorder(null);
-        addCustomerButton.setBounds(600,200,250,125);
+        addCustomerButton.setBounds(DefaultScreen.WIDTH/2 - 100,200,250,125);
         add(addCustomerButton);
 
         removeCustomerButton.setText("Remove customer");
@@ -33,7 +36,7 @@ public class CustomerScreen extends Screen{
         removeCustomerButton.setBackground(new Color(54, 47, 217));
         removeCustomerButton.setForeground(Color.white);
         removeCustomerButton.setBorder(null);
-        removeCustomerButton.setBounds(600,400,250,125);
+        removeCustomerButton.setBounds(DefaultScreen.WIDTH/2 - 100,400,250,125);
         add(removeCustomerButton);
 
 

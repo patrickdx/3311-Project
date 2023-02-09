@@ -1,8 +1,11 @@
-package view;
+package view.request;
+import view.DefaultScreen;
+import view.Screen;
+
 import javax.swing.*;
 import java.awt.*;
-public class RequestScreen extends Screen  {
-    private JLabel titleLabel = new JLabel();
+public class RequestScreen extends Screen {
+    private JLabel titleLabel = new JLabel("Requests");
     private JButton addRequestButton = new JButton();
     private JButton cancelRequestButton = new JButton();
 
@@ -11,7 +14,11 @@ public class RequestScreen extends Screen  {
     private static final Font FONT = new Font("Open Sans",Font.PLAIN,20);
 
     public RequestScreen(){
-        titleLabel.setBounds(70,50,700,100);
+
+        setBackground(new Color(141, 203, 230));
+
+
+        titleLabel.setBounds(DefaultScreen.WIDTH/2 - 100,50,700,100);
         titleLabel.setForeground(Color.white);
         titleLabel.setFont(new Font("Calibri", Font.BOLD, 50));
         add(titleLabel);
@@ -22,7 +29,7 @@ public class RequestScreen extends Screen  {
         addRequestButton.setBackground(new Color(54, 47, 217));
         addRequestButton.setForeground(Color.white);
         addRequestButton.setBorder(null);
-        addRequestButton.setBounds(600,200,250,125);
+        addRequestButton.setBounds(DefaultScreen.WIDTH/2 - 100,200,250,125);
         add(addRequestButton);
 
         cancelRequestButton.setText("Remove a request");
@@ -31,8 +38,8 @@ public class RequestScreen extends Screen  {
         cancelRequestButton.setBackground(new Color(54, 47, 217));
         cancelRequestButton.setForeground(Color.white);
         cancelRequestButton.setBorder(null);
-        cancelRequestButton.setBounds(600,200,250,125);
-        add(addRequestButton);
+        cancelRequestButton.setBounds(DefaultScreen.WIDTH/2 - 100,400,250,125);
+        add(cancelRequestButton);
 
         viewRequestsButton.setText("View all requests");
         viewRequestsButton.setOpaque(true);
@@ -40,7 +47,7 @@ public class RequestScreen extends Screen  {
         viewRequestsButton.setBackground(new Color(54, 47, 217));
         viewRequestsButton.setForeground(Color.white);
         viewRequestsButton.setBorder(null);
-        viewRequestsButton.setBounds(600,200,250,125);
+        viewRequestsButton.setBounds(DefaultScreen.WIDTH/2 - 100,600,250,125);
         add(viewRequestsButton);
 
 

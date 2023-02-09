@@ -1,10 +1,9 @@
 import something.Main;
-import view.CustomerScreen;
-import view.DefaultScreen;
 import view.MainMenu;
-import view.Screen;
-
-import java.awt.*;
+import view.customer.CustomerScreen;
+import view.DefaultScreen;
+import view.request.RequestScreen;
+import view.room.RoomScreen;
 
 public class app {
     private static DefaultScreen defaultScreen;
@@ -16,7 +15,7 @@ public class app {
 
 
         defaultScreen = new DefaultScreen();
-        CustomerScreen screen =  new CustomerScreen();
+        RoomScreen screen =  new RoomScreen();
         defaultScreen.add(screen);
         defaultScreen.setVisible(true);
 

@@ -11,8 +11,8 @@ public class DefaultScreen extends JFrame {
 
 
 
-    public static final int WIDTH = 1600;
-    public static int HEIGHT = 900;
+    public static final int WIDTH = 600;
+    public static int HEIGHT = 800;
 
     public DefaultScreen(){
         setTitle("Hotel Management System");

@@ -1,12 +1,15 @@
-package view;
+package view.room;
+
+import view.DefaultScreen;
+import view.Screen;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class RoomScreen extends Screen{
+public class RoomScreen extends Screen {
     private JLabel titleLabel = new JLabel("Room Options");
     private JButton viewEmptyRoomsButton = new JButton();
-    private JButton viewNumberOfEmptyRoomsButton = new JButton();
+    //private JButton viewNumberOfEmptyRoomsButton = new JButton();
     private JButton viewRoomExpensesButton = new JButton();
     private JButton searchRoomButton = new JButton();
 
@@ -15,7 +18,7 @@ public class RoomScreen extends Screen{
     public RoomScreen(){
         setBackground(new Color(141, 203, 230));
 
-        titleLabel.setBounds(70,50,700,100);
+        titleLabel.setBounds(DefaultScreen.WIDTH/2 - 200,50,700,100);
         titleLabel.setForeground(Color.white);
         titleLabel.setFont(new Font("Calibri", Font.BOLD, 50));
         add(titleLabel);
@@ -26,32 +29,32 @@ public class RoomScreen extends Screen{
         viewEmptyRoomsButton.setBackground(new Color(54, 47, 217));
         viewEmptyRoomsButton.setForeground(Color.white);
         viewEmptyRoomsButton.setBorder(null);
-        viewEmptyRoomsButton.setBounds(600,200,250,125);
+        viewEmptyRoomsButton.setBounds(DefaultScreen.WIDTH/2 - 100,200,250,125);
         add(viewEmptyRoomsButton);
-
+        /*
         viewNumberOfEmptyRoomsButton.setText("View number of empty rooms");
         viewNumberOfEmptyRoomsButton.setOpaque(true);
         viewNumberOfEmptyRoomsButton.setFont(FONT);
         viewNumberOfEmptyRoomsButton.setBackground(new Color(54, 47, 217));
         viewNumberOfEmptyRoomsButton.setForeground(Color.white);
         viewNumberOfEmptyRoomsButton.setBorder(null);
-        viewNumberOfEmptyRoomsButton.setBounds(600,200,250,125);
+        viewNumberOfEmptyRoomsButton.setBounds(DefaultScreen.WIDTH/2 - 100,400,250,125);
         add(viewNumberOfEmptyRoomsButton);
-
+        */
         searchRoomButton.setText("Search a room");
         searchRoomButton.setOpaque(true);
         searchRoomButton.setFont(FONT);
         searchRoomButton.setBackground(new Color(54, 47, 217));
         searchRoomButton.setForeground(Color.white);
         searchRoomButton.setBorder(null);
-        searchRoomButton.setBounds(600,200,250,125);
+        searchRoomButton.setBounds(DefaultScreen.WIDTH/2 - 100,400,250,125);
         add(searchRoomButton);
 
     }
 
     public JLabel getTitleLabel(){return titleLabel;}
     public JButton getEmptyRoomsButton(){return viewEmptyRoomsButton;}
-    public JButton getNumberOfEmptyRoomsButton(){return viewNumberOfEmptyRoomsButton;}
+   // public JButton getNumberOfEmptyRoomsButton(){return viewNumberOfEmptyRoomsButton;}
 
     public JButton getSearchRoomButton(){return searchRoomButton;}
 
