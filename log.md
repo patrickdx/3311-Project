@@ -15,3 +15,7 @@ Devesh: Created a MainMenu class and laid out some button components. TODO: Crea
 Devesh: Created a RoomScreen, CustomerScreen and RequestScreen class. Each are seperate windows for displaying options for the user. Added buttons and did some basic ui design as well.
 
 Patrick: Worked on search functionality, created builder class and intuitive method chain search
+
+### February 9
+
+Patrick: Worked on `Person` search functionality
