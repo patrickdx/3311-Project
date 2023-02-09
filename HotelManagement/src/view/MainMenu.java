@@ -1,6 +1,7 @@
 /*
     Author: Ramful Devesh
-    This class created the main menu screen that the user sees when they open the program.
+    This class is the window for a main menu. It has options so the user can select between rooms and requests.
+    Methods: MainMenu() : Creates an instance of the main menu screen
 
  */
 
@@ -12,7 +13,7 @@ import java.awt.*;
 
 public class MainMenu extends Screen {
     private JLabel titleLabel = new JLabel("Welcome back user");
-    private JButton customerButton = new JButton();
+    //private JButton customerButton = new JButton();
     private JButton roomButton = new JButton();
     private JButton requestButton = new JButton();
 
@@ -22,9 +23,17 @@ public class MainMenu extends Screen {
 
     public MainMenu(){
 
-            setBackground(new Color(141, 203, 230));
+            getBackButton().setVisible(false);
 
-            titleLabel.setBounds(70,50,700,100);
+            setBackground(new Color(141, 203, 230));
+            int titleX = DefaultScreen.WIDTH/2 - 350;
+            int titleY = 50;
+
+            int buttonX = DefaultScreen.WIDTH / 2 - 225;
+            int buttonY = 250;
+
+
+            titleLabel.setBounds(titleX,titleY,700,100);
             titleLabel.setForeground(Color.white);
             titleLabel.setFont(new Font("Calibri", Font.BOLD, 50));
             add(titleLabel);
@@ -33,16 +42,16 @@ public class MainMenu extends Screen {
             ImageIcon roomIcon = new ImageIcon("HotelManagement/lib/room_icon.png");
             ImageIcon requestIcon = new ImageIcon("HotelManagement/lib/request_icon.png");
 
-
+/*
             customerButton.setText("Customers");
             customerButton.setOpaque(true);
             customerButton.setFont(FONT);
             customerButton.setBackground(new Color(54, 47, 217));
             customerButton.setForeground(Color.WHITE);
             customerButton.setBorder(null);
-            customerButton.setBounds(200,200,250,125);
+            customerButton.setBounds(buttonX,buttonY,250,125);
             add(customerButton);
-
+*/
 
             roomButton.setText("Rooms");
             roomButton.setOpaque(true);
@@ -50,7 +59,7 @@ public class MainMenu extends Screen {
             roomButton.setBackground(new Color(157, 241, 223));
             roomButton.setForeground(Color.WHITE);
             roomButton.setBorder(null);
-            roomButton.setBounds(200,400,250,125);
+            roomButton.setBounds(buttonX,buttonY,250,125);
             add(roomButton);
 
 
@@ -60,15 +69,16 @@ public class MainMenu extends Screen {
             requestButton.setBackground(new Color(255, 234, 32));
             requestButton.setForeground(Color.WHITE);
             requestButton.setBorder(null);
-            requestButton.setBounds(200,600,250,125);
+            requestButton.setBounds(buttonX,buttonY + 150,250,125);
             add(requestButton);
+
 
          }
 
     public JLabel getTitleLabel() {return titleLabel;}
-    public JButton getCustomerButton(){return customerButton;}
+    //public JButton getCustomerButton(){return customerButton;}
     public JButton getRoomButton(){return roomButton;}
-    public JButton getGetCustomerButton() {return requestButton;}
+    public JButton getRequestButton() {return requestButton;}
 
 
 

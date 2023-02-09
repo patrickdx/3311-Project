@@ -11,7 +11,6 @@ public class addCustomerScreen extends Screen {
     private static final Font FONT = new Font("Open Sans",Font.PLAIN,20);
 
     private JTextField nameField = new JTextField();
-
     private JTextField roomField = new JTextField();
     private JTextField ageField = new JTextField();
     private JTextField sinField = new JTextField();
