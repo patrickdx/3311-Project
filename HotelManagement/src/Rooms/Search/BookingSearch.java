@@ -13,9 +13,18 @@ public class BookingSearch extends PredicateSearch<Booking> {
         super(bookings);
     }
 
-    public void date(LocalDate date){
+    public BookingSearch date(LocalDate date){
         Predicate<Booking> dateSearch = x -> x.getDateBooked() == date;
-        totalPredicate.and(dateSearch);
+        addPredicate(dateSearch);
+        return this;
     }
+
+    public BookingSearch id(int id) {
+        Predicate<Booking> idSearch = x -> x.getBookingID() == id;
+        addPredicate(idSearch);
+        return this;
+    }
+
+
 
 }

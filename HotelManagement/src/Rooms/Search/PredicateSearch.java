@@ -15,8 +15,11 @@ public class PredicateSearch<T> {
         this.repository = repository;
     }
 
+    public void addPredicate(Predicate<T> toAdd){
+        totalPredicate = totalPredicate.and(toAdd);
+    }
 
-
+    // streams the collection and filters based on totalPredicate criteria.
     public List<T> search() {
         return (List<T>) this.repository.stream().filter(totalPredicate).collect(Collectors.toList());
     }

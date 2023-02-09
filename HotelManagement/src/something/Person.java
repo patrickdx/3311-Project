@@ -13,11 +13,16 @@ public class Person {
         AGE = age;
     }
 
+
     public String getName() {
         return NAME;
     }
 
     public int getID(){
         return this.ID;
+    }
+
+    public int getAge(){
+        return this.AGE;
     }
 }
