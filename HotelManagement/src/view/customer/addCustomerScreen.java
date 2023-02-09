@@ -11,6 +11,8 @@ public class addCustomerScreen extends Screen {
     private static final Font FONT = new Font("Open Sans",Font.PLAIN,20);
 
     private JTextField nameField = new JTextField();
+
+    private JTextField roomField = new JTextField();
     private JTextField ageField = new JTextField();
     private JTextField sinField = new JTextField();
     private JTextField durationOfStayField = new JTextField();
@@ -19,6 +21,7 @@ public class addCustomerScreen extends Screen {
     private JTextField checkOutDateField = new JTextField();
 
     private JLabel nameLabel = new JLabel("Name: ");
+    private JLabel roomLabel = new JLabel("Room id: ");
     private JLabel ageLabel = new JLabel("Age: ");
     private JLabel sinLabel = new JLabel("SIN: ");
     private JLabel durationOfStayLabel = new JLabel("Duration: ");
@@ -36,7 +39,7 @@ public class addCustomerScreen extends Screen {
         int FIELD_Y = 80;
 
         int BUTTON_X = DefaultScreen.WIDTH/2 - 75;
-        int BUTTON_Y = 600;
+        int BUTTON_Y = 675;
 
         setBackground(new Color(102, 153, 204));
 
@@ -76,12 +79,19 @@ public class addCustomerScreen extends Screen {
         checkOutDateLabel.setFont(new Font("Calibri", Font.BOLD, 25));
         add(checkOutDateLabel);
 
+        roomLabel.setBounds(LABEL_X,LABEL_Y+525,700,100);
+        roomLabel.setForeground(Color.white);
+        roomLabel.setFont(new Font("Calibri", Font.BOLD, 25));
+        add(roomLabel);
+
 
 
         nameField.setForeground(Color.GRAY);
         nameField.setBounds(FIELD_X, FIELD_Y, 200,40);
         add(nameField);
         nameField.setColumns(10);
+
+
 
         ageField.setForeground(Color.GRAY);
         ageField.setBounds(FIELD_X, FIELD_Y+75, 200,40);
@@ -112,6 +122,11 @@ public class addCustomerScreen extends Screen {
         checkOutDateField.setBounds(FIELD_X, FIELD_Y+450, 200,40);
         add(checkOutDateField);
         dateBookedField.setColumns(10);
+
+        roomField.setForeground(Color.GRAY);
+        roomField.setBounds(FIELD_X, FIELD_Y+525, 200,40);
+        add(roomField);
+        roomField.setColumns(10);
 
         addCustomerInfoButton.setText("ADD");
         addCustomerInfoButton.setOpaque(true);
