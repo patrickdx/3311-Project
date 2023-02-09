@@ -17,7 +17,7 @@ public class Screen extends JPanel {
 
         ImageIcon backButtonIcon = new ImageIcon("HotelManagement/lib/backButton.png");
         backButton =  new JButton(backButtonIcon);
-        backButton.setBounds(1400,20,backButtonIcon.getIconWidth(),backButtonIcon.getIconHeight());
+        backButton.setBounds(525,20,backButtonIcon.getIconWidth(),backButtonIcon.getIconHeight());
         backButton.setContentAreaFilled(false);
         backButton.setBorderPainted(false);
         add(backButton);
