@@ -13,12 +13,14 @@ public class RoomRepository {
    static  List<Booking> clients = new ArrayList<>();  // total clients
 
     public static void main (String args[]){
-        Room room = new Room(24, RoomType.SINGLE);
-        rooms.add(room);
-        RoomSearch xd = new RoomSearch(rooms);
+        // searching for room/clients will happen here
 
-        System.out.println(room.getRoomID());
-        System.out.println(xd.roomID(24).roomType(RoomType.SINGLE).search());
+//        Room room = new Room(24, RoomType.SINGLE);
+//        rooms.add(room);
+//        RoomSearch xd = new RoomSearch(rooms);
+//
+//        System.out.println(room.getRoomID());
+//        System.out.println(xd.roomID(24).roomType(RoomType.SINGLE).search());
 
 
     }

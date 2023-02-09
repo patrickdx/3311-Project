@@ -1,11 +1,9 @@
 package Rooms;
 
-import something.Person;
-
 import java.time.LocalDate;
 import java.util.List;
 
-public class Booking implements RoomInterface {
+public class Booking  {
 
     private int booking_id;
     public List<Person> guests;
@@ -17,12 +15,11 @@ public class Booking implements RoomInterface {
         this.guests = guests;
         this.dateBooked = date;
     }
-    @Override
+
     public void addGuest(Person person){
         guests.add(person);
     }
 
-    @Override
     public void removeGuest(int customer_id) {
         for (Person i : guests){
             if (i.getID() == customer_id) guests.remove(i);
