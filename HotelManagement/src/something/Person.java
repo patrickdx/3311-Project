@@ -25,4 +25,8 @@ public class Person {
     public int getAge(){
         return this.AGE;
     }
+
+    public int getSin(){
+        return this.SIN;
+    }
 }
