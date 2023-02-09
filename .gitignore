@@ -2,3 +2,4 @@
 *.class
 *.imi
 .DS_Store
+/.metadata/

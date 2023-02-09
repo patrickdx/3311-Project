@@ -11,18 +11,11 @@ public class app {
 
 
     public static  void main(String[] args) {
-
         //creating and showing this application's GUI.
-
-
         defaultScreen = new DefaultScreen();
-        addCustomerScreen screen = new addCustomerScreen();
+        MainMenu screen = new MainMenu();
         defaultScreen.add(screen);
         defaultScreen.setVisible(true);
-
-
-
-
 
     }
 }

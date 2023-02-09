@@ -63,17 +63,6 @@ public class MainMenu extends Screen {
             requestButton.setBounds(200,600,250,125);
             add(requestButton);
 
-
-
-
-
-
-
-
-
-
-
-
          }
 
     public JLabel getTitleLabel() {return titleLabel;}
