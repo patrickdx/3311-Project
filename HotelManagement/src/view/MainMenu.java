@@ -2,13 +2,20 @@
     Author: Ramful Devesh
     This class is the window for a main menu. It has options so the user can select between rooms and requests.
     Methods: MainMenu() : Creates an instance of the main menu screen
+            getTitleLabel() : Getter function that returns the title at top of screen
+            getRoomButton() : Getter function that returns the room button object.
+            getRoomButton() : Getter function that returns the request button object.
 
  */
 
 package view;
 import javax.swing.*;
 
+import view.request.RequestScreen;
+import view.room.RoomScreen;
+
 import java.awt.*;
+import java.awt.event.ActionListener;
 
 
 public class MainMenu extends Screen {
@@ -41,6 +48,25 @@ public class MainMenu extends Screen {
             ImageIcon customerIcon = new ImageIcon("HotelManagement/lib/customer_icon.png");
             ImageIcon roomIcon = new ImageIcon("HotelManagement/lib/room_icon.png");
             ImageIcon requestIcon = new ImageIcon("HotelManagement/lib/request_icon.png");
+
+
+            //ActionListener ae;
+            roomButton.addActionListener((e)-> {
+                view.room.RoomScreen rooms = new RoomScreen();
+                this.setVisible(false);
+                rooms.setVisible(true);
+                
+            });
+
+            requestButton.addActionListener((e)->{
+                view.request.RequestScreen request = new RequestScreen();
+                this.setVisible(false);
+                request.setVisible(true);
+                
+            });
+
+
+
 
 /*
             customerButton.setText("Customers");
