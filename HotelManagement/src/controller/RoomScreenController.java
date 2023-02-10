@@ -31,7 +31,8 @@ public class RoomScreenController implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
-		
+		if(room.getSearchRoomButton().isSelected())
+			System.out.print("Buton pressed!");
 	}
 
 }
