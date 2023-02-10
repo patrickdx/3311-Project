@@ -1,21 +1,14 @@
-/*
 package controller;
-
 import view.MainMenu;
-import view.DefaultScreen
 import view.Screen;
-import view.customer.CustomerScreen;
 import view.DefaultScreen;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 import javax.swing.JPanel;
 
 import Rooms.Search.TypeOfScreen;
-
-import view.*;
-import javax.swing.*;
+import view.request.RequestScreen;
+import view.room.RoomScreen;
 
 
 public class ApplicationController {
@@ -23,25 +16,26 @@ public class ApplicationController {
 
     public static Screen[] screens = new Screen[TypeOfScreen.values().length];
     public static MainMenuController mainMenuController;
-    //public static 
+    public static RequestController requestController;
+    public static RoomScreenController roomController;
 
 
+    public ApplicationController(DefaultScreen defaultScreen) {
+        this.defaultScreen = defaultScreen;
 
 
-    DefaultScreen screen= new DefaultScreen();
+        screens[TypeOfScreen.MAIN_MENU_SCREEN.getNumber()] = new MainMenu();
+        screens[TypeOfScreen.ROOM_SCREEN.getNumber()] = new RoomScreen();
+        screens[TypeOfScreen.REGISTER_SCREEN.getNumber()] = new RequestScreen();
 
-    screens[ScreenType.MAIN_MENU_SCREEN.getValue()]= new MainMenuScreen();
-    screens[ScreenType.ROOM_SCREEN.getValue()]= new RoomScreen();
-    screens[ScreenType.REGISTER_SCREEN.getValue()]= new RegisterScreen();
+        mainMenuController = new MainMenuController((MainMenu) screens[TypeOfScreen.MAIN_MENU_SCREEN.getNumber()]);
+        roomController = new RoomScreenController((RoomScreen) screens[TypeOfScreen.ROOM_SCREEN.getNumber()]);
+        requestController = new RequestController((RequestScreen) screens[TypeOfScreen.REGISTER_SCREEN.getNumber()]);
 
+        screenSwitching(screens[TypeOfScreen.MAIN_MENU_SCREEN.getNumber()]);
 
-    roomController = new roomController((RoomScreen) screens[TypeOfScreen.ROOM_SCREEN.getNumber()]);
-    mainMenuController = new MainMenuController((MainMenuScreen) screens[TypeOfScreen.MAIN_MENU_SCREEN.getNumber()]);
-    registerController = new registerController((RegisterScreen) screens[TypeOfScreen.REGISTER_SCREEN.getNumber()]);
-
-
+    }
     public static void screenSwitching(JPanel Nscreen){
-
         defaultScreen.getContentPane().removeAll();
         defaultScreen.getContentPane().repaint();
         defaultScreen.getContentPane().add(Nscreen);
@@ -50,4 +44,4 @@ public class ApplicationController {
 
 
 }
-*/
+
