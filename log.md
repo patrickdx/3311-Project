@@ -18,8 +18,9 @@ Patrick: Worked on search functionality, created builder class and intuitive met
 
 ### February 9
 
-Patrick: Worked on `Person` search functionality
-Devesh: Worked on 'Room' and 'Request' screens. 'CustomerScreen' was dropped and the features were moved seperately into room and request.
+Patrick: Worked on `Person` search functionality.
+
+Devesh: Worked on `Room` and `Request` package. `Customer` was dropped and the features were moved seperately into room and request.
 
 ### February 10
 Devesh: Completed the GUI interface.
