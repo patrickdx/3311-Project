@@ -1,4 +1,8 @@
 package view.request;
 
-public class viewRequestScreen {
+import view.Screen;
+
+import javax.swing.*;
+
+public class viewRequestScreen extends Screen {
 }

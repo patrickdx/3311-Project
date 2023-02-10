@@ -25,25 +25,25 @@ public class RoomScreen extends Screen {
 
     public RoomScreen(){
 
-        /*
-        Creating room cards to display. This must be moved to a controller class.
+
+        //Creating room cards to display. This must be moved to a controller class.
 
         RoomCard roomCard1 = new RoomCard(001,false,1,50);
         RoomCard roomCard2 = new RoomCard(002,false,2,100);
         RoomCard roomCard3 = new RoomCard(003,true,2,100);
-        */
+
 
 
         JPanel container = new JPanel();
 
         container.setBounds(DefaultScreen.WIDTH/2 - 300,150,700,600);
         container.setBackground(new Color (250, 243, 222));
-        /* This is how you add a roomCard to the container. This should be moved to a controller class
+         //This is how you add a roomCard to the container. This should be moved to a controller class
         container.add(roomCard1);
         container.add(roomCard2);
         container.add(roomCard3);
 
-         */
+
         container.setVisible(true);
         add(container);
 

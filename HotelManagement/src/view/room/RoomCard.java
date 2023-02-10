@@ -83,6 +83,12 @@ public class RoomCard extends JPanel{
 
     }
 
+    public JLabel getRoomNumberLabel(){return roomNumberLabel;}
+    public JLabel getRoomRateLabel(){return roomRateLabel;}
+    public JLabel getRoomStatusLabel(){return roomStatusLabel;}
+    public JLabel getRoomBedNumberLabel(){return roomBedNumberLabel;}
+
+    /*
     public void  renderRoomCard(int number, boolean status, int bedNumber, int rate){
         this.number = Integer.toString(number);
         if (status == false){
@@ -100,6 +106,12 @@ public class RoomCard extends JPanel{
         this.number = Integer.toString(r.getRoomID());
         this.bedNumber = Integer.toString(r.getType().getSize());
         this.rate = Integer.toString(r.getType().getRate());
+        if (r.isBooked == false){
+            this.status = "EMPTY";
+
+        } else if (r.isBooked = true){
+            this.status = "BOOKED";
+        }
     }
 
     public void setRoomNumber(int number){
@@ -122,5 +134,7 @@ public class RoomCard extends JPanel{
     public void setRate(int rate){
         this.rate = Integer.toString(rate);
     }
+
+     */
 
 }
