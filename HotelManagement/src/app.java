@@ -17,7 +17,7 @@ public class app {
 
 
         defaultScreen = new DefaultScreen();
-        RoomScreen screen = new RoomScreen();
+        RequestScreen screen = new RequestScreen();
         defaultScreen.add(screen);
         defaultScreen.setVisible(true);
 

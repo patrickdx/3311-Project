@@ -17,8 +17,10 @@ public class RequestScreen extends Screen {
 
         setBackground(new Color(141, 203, 230));
 
+        int X = DefaultScreen.WIDTH/2 - 200;
 
-        titleLabel.setBounds(DefaultScreen.WIDTH/2 - 100,50,700,100);
+
+        titleLabel.setBounds(X,50,700,100);
         titleLabel.setForeground(Color.white);
         titleLabel.setFont(new Font("Calibri", Font.BOLD, 50));
         add(titleLabel);
@@ -29,7 +31,7 @@ public class RequestScreen extends Screen {
         addRequestButton.setBackground(new Color(54, 47, 217));
         addRequestButton.setForeground(Color.white);
         addRequestButton.setBorder(null);
-        addRequestButton.setBounds(DefaultScreen.WIDTH/2 - 100,200,250,125);
+        addRequestButton.setBounds(X,200,250,125);
         add(addRequestButton);
 
         cancelRequestButton.setText("Remove a request");
@@ -38,7 +40,7 @@ public class RequestScreen extends Screen {
         cancelRequestButton.setBackground(new Color(54, 47, 217));
         cancelRequestButton.setForeground(Color.white);
         cancelRequestButton.setBorder(null);
-        cancelRequestButton.setBounds(DefaultScreen.WIDTH/2 - 100,400,250,125);
+        cancelRequestButton.setBounds(X,400,250,125);
         add(cancelRequestButton);
 
         viewRequestsButton.setText("View all requests");
@@ -47,7 +49,7 @@ public class RequestScreen extends Screen {
         viewRequestsButton.setBackground(new Color(54, 47, 217));
         viewRequestsButton.setForeground(Color.white);
         viewRequestsButton.setBorder(null);
-        viewRequestsButton.setBounds(DefaultScreen.WIDTH/2 - 100,600,250,125);
+        viewRequestsButton.setBounds(X,600,250,125);
         add(viewRequestsButton);
 
 
