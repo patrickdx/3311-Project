@@ -1,6 +1,6 @@
 package Rooms.Search;
 
-import something.Person;
+import Rooms.Person;
 
 import java.util.List;
 import java.util.function.Predicate;
@@ -17,7 +17,7 @@ public class PersonSearch extends PredicateSearch<Person>{
         return this;
     }
 
-    public PersonSearch age (int age){
+    public PersonSearch age(int age){
         Predicate<Person> xd = x -> x.getAge() == age;
         addPredicate(xd);
         return this;

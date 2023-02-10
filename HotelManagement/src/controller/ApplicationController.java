@@ -1,4 +1,5 @@
 package controller;
+<<<<<<< HEAD
 import view.MainMenu;
 import view.Screen;
 import view.customer.CustomerScreen;
@@ -10,6 +11,10 @@ import java.awt.event.ActionListener;
 import javax.swing.JPanel;
 
 import Rooms.Search.TypeOfScreen;
+=======
+import view.*;
+import javax.swing.*;
+>>>>>>> e0b2e97006f04d508a366a139d8267e81122d902
 
 public class ApplicationController {
     private static DefaultScreen defaultScreen;
