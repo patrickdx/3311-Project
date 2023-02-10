@@ -1,9 +1,7 @@
 package view.room;
 
 
-import Rooms.Booking;
-import Rooms.Room;
-import something.Person;
+
 import view.Screen;
 
 import javax.swing.*;

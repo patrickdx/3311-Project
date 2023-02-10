@@ -5,6 +5,7 @@ import view.DefaultScreen;
 import view.request.RequestScreen;
 import view.room.RoomScreen;
 import view.customer.addCustomerScreen;
+import view.room.searchRoomScreen;
 
 public class app {
     private static DefaultScreen defaultScreen;
@@ -16,9 +17,10 @@ public class app {
 
 
         defaultScreen = new DefaultScreen();
-        MainMenu screen = new MainMenu();
+        RoomScreen screen = new RoomScreen();
         defaultScreen.add(screen);
         defaultScreen.setVisible(true);
+
 
 
 

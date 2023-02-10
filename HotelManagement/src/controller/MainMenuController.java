@@ -42,7 +42,6 @@ public class MainMenuController implements ActionListener {
 	public void setupListeners(){
 		main.getRoomButton().addActionListener(this);
 		main.getRequestButton().addActionListener(this);
-		
 	}
 
 	@Override
@@ -50,10 +49,12 @@ public class MainMenuController implements ActionListener {
 		// TODO Auto-generated method stub
 
 		if(e.getSource() == main.getRoomButton()){
-			ApplicationController.screenSwitching(ApplicationController.screens[TypeOfScreen.ROOM_SCREEN.getNumber()]);
+			//ApplicationController.screenSwitching(ApplicationController.screens[TypeOfScreen.ROOM_SCREEN.getNumber()]);
 
 		}
 		
 	}
+
+
 
 }

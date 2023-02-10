@@ -14,7 +14,7 @@ public class RoomScreen extends Screen {
     private JButton searchRoomButton = new JButton();
 
     private JButton addCustomerButton = new JButton();
-
+    private JButton showEmptyRoomsButton = new JButton();
 
 
 
@@ -38,6 +38,7 @@ public class RoomScreen extends Screen {
 
         container.setBounds(DefaultScreen.WIDTH/2 - 300,150,700,600);
         container.setBackground(new Color (250, 243, 222));
+
          //This is how you add a roomCard to the container. This should be moved to a controller class
         container.add(roomCard1);
         container.add(roomCard2);
@@ -73,6 +74,14 @@ public class RoomScreen extends Screen {
         searchRoomButton.setBorder(null);
         searchRoomButton.setBounds(DefaultScreen.WIDTH/2 - 400,100,64,64);
         add(searchRoomButton);
+
+        showEmptyRoomsButton.setText("EMPTY");
+        showEmptyRoomsButton.setOpaque(true);
+        showEmptyRoomsButton.setFont(FONT);
+        showEmptyRoomsButton.setBackground(new  Color(157, 241, 223));
+        showEmptyRoomsButton.setBorder(null);
+        showEmptyRoomsButton.setBounds(DefaultScreen.WIDTH/2 - 450, 200, 100,50);
+        add(showEmptyRoomsButton);
 
         /*
         Redundant button. Keep it for future iteration changes.

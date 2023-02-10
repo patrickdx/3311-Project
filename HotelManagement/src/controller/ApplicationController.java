@@ -1,6 +1,8 @@
+/*
 package controller;
-<<<<<<< HEAD
+
 import view.MainMenu;
+import view.DefaultScreen
 import view.Screen;
 import view.customer.CustomerScreen;
 import view.DefaultScreen;
@@ -11,10 +13,10 @@ import java.awt.event.ActionListener;
 import javax.swing.JPanel;
 
 import Rooms.Search.TypeOfScreen;
-=======
+
 import view.*;
 import javax.swing.*;
->>>>>>> e0b2e97006f04d508a366a139d8267e81122d902
+
 
 public class ApplicationController {
     private static DefaultScreen defaultScreen;
@@ -26,7 +28,7 @@ public class ApplicationController {
 
 
 
-    defaultScreen = new DefaultScreen();
+    DefaultScreen screen= new DefaultScreen();
 
     screens[ScreenType.MAIN_MENU_SCREEN.getValue()]= new MainMenuScreen();
     screens[ScreenType.ROOM_SCREEN.getValue()]= new RoomScreen();
@@ -48,4 +50,4 @@ public class ApplicationController {
 
 
 }
-
+*/
