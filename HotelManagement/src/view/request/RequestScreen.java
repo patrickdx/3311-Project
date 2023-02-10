@@ -1,3 +1,11 @@
+/*
+    Author: Ramful Devesh
+    This class displays the request window.
+    Methods: getAddRequestButton() - Returns the button object to add a request.
+             getRequestContainer() - Returns the container object that holds all the request cards.
+
+ */
+
 package view.request;
 import view.DefaultScreen;
 import view.Screen;
@@ -7,9 +15,8 @@ import java.awt.*;
 public class RequestScreen extends Screen {
     private JLabel titleLabel = new JLabel("Requests");
     private JButton addRequestButton = new JButton();
-    private JButton cancelRequestButton = new JButton();
 
-    private JButton viewRequestsButton = new JButton();
+    private JPanel container = new JPanel();
 
     private static final Font FONT = new Font("Open Sans",Font.PLAIN,20);
 
@@ -18,6 +25,28 @@ public class RequestScreen extends Screen {
         setBackground(new Color(141, 203, 230));
 
         int X = DefaultScreen.WIDTH/2 - 200;
+        ImageIcon addIcon = new ImageIcon("HotelManagement/lib/addIcon.png");
+
+        container.setBounds(DefaultScreen.WIDTH/2 - 300,150,700,600);
+        container.setBackground(new Color (250, 243, 222));
+
+        /* Example on how to add a request card. Should be moved to a container class.
+        RequestCard r1 = new RequestCard();
+        RequestCard r2 = new RequestCard();
+
+        r1.getRequestTypeLabel().setText("Linen");
+        r1.getRoomNumberLabel().setText("001");
+
+        r2.getRequestTypeLabel().setText("Service");
+        r2.getRoomNumberLabel().setText("201");
+        container.add(r1);
+        container.add(r2);
+
+         */
+
+        container.setVisible(true);
+        add(container);
+
 
 
         titleLabel.setBounds(X,50,700,100);
@@ -25,32 +54,14 @@ public class RequestScreen extends Screen {
         titleLabel.setFont(new Font("Calibri", Font.BOLD, 50));
         add(titleLabel);
 
-        addRequestButton.setText("Add a request");
+        addRequestButton.setIcon(addIcon);
         addRequestButton.setOpaque(true);
         addRequestButton.setFont(FONT);
-        addRequestButton.setBackground(new Color(54, 47, 217));
-        addRequestButton.setForeground(Color.white);
+        addRequestButton.setBackground(Color.GREEN);
+        addRequestButton.setForeground(Color.WHITE);
         addRequestButton.setBorder(null);
-        addRequestButton.setBounds(X,200,250,125);
+        addRequestButton.setBounds(X+400,100,50,50);
         add(addRequestButton);
-
-        cancelRequestButton.setText("Remove a request");
-        cancelRequestButton.setOpaque(true);
-        cancelRequestButton.setFont(FONT);
-        cancelRequestButton.setBackground(new Color(54, 47, 217));
-        cancelRequestButton.setForeground(Color.white);
-        cancelRequestButton.setBorder(null);
-        cancelRequestButton.setBounds(X,400,250,125);
-        add(cancelRequestButton);
-
-        viewRequestsButton.setText("View all requests");
-        viewRequestsButton.setOpaque(true);
-        viewRequestsButton.setFont(FONT);
-        viewRequestsButton.setBackground(new Color(54, 47, 217));
-        viewRequestsButton.setForeground(Color.white);
-        viewRequestsButton.setBorder(null);
-        viewRequestsButton.setBounds(X,600,250,125);
-        add(viewRequestsButton);
 
 
 
@@ -60,10 +71,7 @@ public class RequestScreen extends Screen {
     public JLabel getTitleLabel(){return titleLabel;}
 
     public JButton getAddRequestButton(){return addRequestButton;}
-
-    public JButton getCancelRequestButton(){return cancelRequestButton;}
-
-    public JButton getViewRequestsButton(){return viewRequestsButton;}
+    public JPanel getRequestContainer() {return container;}
 
 
 }

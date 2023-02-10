@@ -5,7 +5,10 @@ Author: Ramful Devesh
     This class renders the room card in the room window container.
 
     Methods: RoomCard - Constructor to create a new room card.
-            renderRoomCard - Passes either a room object or individual room data types to this render object so that it can be changed or updated
+             getRoomNumberLabel() - return the label (text) that is used to show room number
+             getRoomRateLabel() - return the label (text) that is used to show room rate
+             getRoomStatus() - return the label (text) that is used to show room status (BOOKED or OCCUPIED)
+             getRoomBedNumberLabel() -  return the label that is used to show number of beds in the room
 
  */
 
@@ -36,20 +39,9 @@ public class RoomCard extends JPanel{
 
     private static final Font FONT = new Font("Open Sans",Font.PLAIN,20);
 
-    RoomCard(int number, boolean status, int bedNumber, int rate){
+    RoomCard(){
 
-        this.number = Integer.toString(number);
-        if (status == false){
-            this.status = "EMPTY";
-            setBackground(green);
 
-        } else if (status = true){
-            this.status = "BOOKED";
-            setBackground(red);
-        }
-
-        this.bedNumber = Integer.toString(bedNumber);
-        this.rate = Integer.toString(rate);
 
         setPreferredSize(new Dimension(500,50));
         setForeground(Color.white);
@@ -88,53 +80,9 @@ public class RoomCard extends JPanel{
     public JLabel getRoomStatusLabel(){return roomStatusLabel;}
     public JLabel getRoomBedNumberLabel(){return roomBedNumberLabel;}
 
-    /*
-    public void  renderRoomCard(int number, boolean status, int bedNumber, int rate){
-        this.number = Integer.toString(number);
-        if (status == false){
-            this.status = "EMPTY";
 
-        } else if (status = true){
-            this.status = "BOOKED";
-        }
 
-        this.bedNumber = Integer.toString(bedNumber);
-        this.rate = Integer.toString(rate);
-    }
 
-    public void renderRoomCard (Room r){
-        this.number = Integer.toString(r.getRoomID());
-        this.bedNumber = Integer.toString(r.getType().getSize());
-        this.rate = Integer.toString(r.getType().getRate());
-        if (r.isBooked == false){
-            this.status = "EMPTY";
 
-        } else if (r.isBooked = true){
-            this.status = "BOOKED";
-        }
-    }
-
-    public void setRoomNumber(int number){
-        this.number = Integer.toString(number);
-    }
-
-    public void setRoomStatus(boolean status){
-        if (status == false){
-            this.status = "EMPTY";
-
-        } else if (status = true){
-            this.status = "BOOKED";
-        }
-    }
-
-    public void setBedNumber(int bedNumber){
-        this.bedNumber = Integer.toString(bedNumber);
-    }
-
-    public void setRate(int rate){
-        this.rate = Integer.toString(rate);
-    }
-
-     */
 
 }

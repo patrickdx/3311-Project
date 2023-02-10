@@ -22,8 +22,8 @@ public class RequestController  implements ActionListener{
 	private void setupListeners() {
 		// TODO Auto-generated method stub
 		request.getAddRequestButton().addActionListener(this);
-		request.getCancelRequestButton().addActionListener(this);
-		request.getViewRequestsButton().addActionListener(this);
+		//request.getCancelRequestButton().addActionListener(this);
+		//request.getViewRequestsButton().addActionListener(this);
 	}
 
 	@Override

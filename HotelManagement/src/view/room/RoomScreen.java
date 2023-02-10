@@ -1,4 +1,11 @@
+/*
+    Author: Ramful Devesh
+    This class displays the room window.
+
+ */
+
 package view.room;
+
 
 import view.DefaultScreen;
 import view.Screen;
@@ -10,40 +17,34 @@ public class RoomScreen extends Screen {
     private JLabel titleLabel = new JLabel("Room ");
     private JButton viewEmptyRoomsButton = new JButton();
     //private JButton viewNumberOfEmptyRoomsButton = new JButton();
-    private JButton viewRoomExpensesButton = new JButton();
+   // private JButton viewRoomExpensesButton = new JButton();
     private JButton searchRoomButton = new JButton();
 
-    private JButton addCustomerButton = new JButton();
+    //private JButton addCustomerButton = new JButton();
     private JButton showEmptyRoomsButton = new JButton();
 
-
-
-
+    private JPanel container = new JPanel();
 
 
     private static final Font FONT = new Font("Open Sans",Font.PLAIN,20);
 
     public RoomScreen(){
+        /* Example on how to create a room card. This should be moved to a controller class and this comment removed.
+        RoomCard roomCard1 = new RoomCard();
+        RoomCard roomCard2 = new RoomCard();
+        RoomCard roomCard3 = new RoomCard();
 
-
-        //Creating room cards to display. This must be moved to a controller class.
-
-        RoomCard roomCard1 = new RoomCard(001,false,1,50);
-        RoomCard roomCard2 = new RoomCard(002,false,2,100);
-        RoomCard roomCard3 = new RoomCard(003,true,2,100);
-
-
-
-        JPanel container = new JPanel();
+         */
 
         container.setBounds(DefaultScreen.WIDTH/2 - 300,150,700,600);
         container.setBackground(new Color (250, 243, 222));
 
-         //This is how you add a roomCard to the container. This should be moved to a controller class
+/*      Example on how to add card to the container. This should be moved to a controller class and this comment removed.
         container.add(roomCard1);
         container.add(roomCard2);
         container.add(roomCard3);
 
+ */
 
         container.setVisible(true);
         add(container);
@@ -103,9 +104,14 @@ public class RoomScreen extends Screen {
     }
 
     public JLabel getTitleLabel(){return titleLabel;}
+
+    private JPanel getRoomContainer() {return container;}
+
     public JButton getEmptyRoomsButton(){return viewEmptyRoomsButton;}
    // public JButton getNumberOfEmptyRoomsButton(){return viewNumberOfEmptyRoomsButton;}
 
     public JButton getSearchRoomButton(){return searchRoomButton;}
+
+
 
 }

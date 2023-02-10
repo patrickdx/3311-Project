@@ -2,6 +2,9 @@
     Author: Ramful Devesh
     This class is the window for a main menu. It has options so the user can select between rooms and requests.
     Methods: MainMenu() : Creates an instance of the main menu screen
+            getTitleLabel() : Getter function that returns the title at top of screen
+            getRoomButton() : Getter function that returns the room button object.
+            getRoomButton() : Getter function that returns the request button object.
 
  */
 
@@ -59,10 +62,8 @@ public class MainMenu extends Screen {
                 view.request.RequestScreen request = new RequestScreen();
                 this.setVisible(false);
                 request.setVisible(true);
-
                 
             });
-
 
 
 

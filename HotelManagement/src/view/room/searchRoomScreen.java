@@ -1,3 +1,7 @@
+/*
+Redundant class. Will be used for future iterations
+ */
+
 package view.room;
 
 import javax.swing.*;
@@ -13,6 +17,8 @@ public class searchRoomScreen{
         window.setVisible(true);
         JOptionPane.showInputDialog(null, "Search  room");
     }
+
+
 
 
 }

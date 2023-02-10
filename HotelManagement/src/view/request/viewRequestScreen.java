@@ -1,3 +1,7 @@
+/*
+    For future iteration
+ */
+
 package view.request;
 
 import view.Screen;
