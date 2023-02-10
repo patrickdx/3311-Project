@@ -19,7 +19,7 @@ public class app {
 
 
         defaultScreen = new DefaultScreen();
-         RequestScreen screen = new RequestScreen();
+         MainMenu screen = new MainMenu();
         defaultScreen.add(screen);
         defaultScreen.setVisible(true);
 
