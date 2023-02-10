@@ -28,6 +28,8 @@ Patrick: Worked on `Person` search functionality.
 
 Devesh: Worked on `Room` and `Request` package. `Customer` was dropped and the features were moved seperately into room and request.
 
+Temi: Created instances for person(testing purposes).
+
 Team Meeting: Discussion of redesign on GUI to better suit iteration 1 requirements. Bit of redesign of model to views were discussed as there was initially a customers page that was not outlined in iteration 0.
 
 ### February 10
@@ -35,3 +37,5 @@ Team Meeting: Discussion of redesign on GUI to better suit iteration 1 requireme
 Arian: Finished up the wiki page and added images.
 
 Devesh: Completed the `View` package. GUI is done for itr1.
+
+Temi: Set up controller classes for the GUI.
