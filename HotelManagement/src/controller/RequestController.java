@@ -1,7 +1,11 @@
-package Controller;
+package controller;
 
-import view.RequestScreen;
+
+
 import javax.swing.*;
+
+import view.request.RequestScreen;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 

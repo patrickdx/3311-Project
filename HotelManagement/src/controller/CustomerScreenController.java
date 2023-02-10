@@ -1,8 +1,11 @@
-package Controller;
+package controller;
 import java.awt.event.ActionEvent;
+
 import java.awt.event.ActionListener;
 
-import view.CustomerScreen;
+import view.customer.CustomerScreen;
+
+
 
 
 public class CustomerScreenController implements ActionListener{

@@ -1,10 +1,14 @@
-package Controller;
+package controller;
 
 import java.awt.event.ActionEvent;
+
 import java.awt.event.ActionListener;
 
+import view.room.RoomScreen;
+import javax.swing.*;
 
-import view.RoomScreen;
+
+
 
 
 public class RoomScreenController implements ActionListener{
@@ -19,7 +23,7 @@ public class RoomScreenController implements ActionListener{
 	private void setupListeners() {
 		// TODO Auto-generated method stub
 		room.getEmptyRoomsButton().addActionListener(this);
-		room.getNumberOfEmptyRoomsButton().addActionListener(this);
+		room.getEmptyRoomsButton().addActionListener(this);
 		room.getSearchRoomButton().addActionListener(this);
 	
 	}
