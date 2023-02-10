@@ -1,3 +1,6 @@
+/*
+    Class will be used for future iterations
+ */
 package view.customer;
 import view.DefaultScreen;
 import view.Screen;

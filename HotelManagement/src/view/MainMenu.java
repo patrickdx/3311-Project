@@ -68,16 +68,7 @@ public class MainMenu extends Screen {
 
 
 
-/*
-            customerButton.setText("Customers");
-            customerButton.setOpaque(true);
-            customerButton.setFont(FONT);
-            customerButton.setBackground(new Color(54, 47, 217));
-            customerButton.setForeground(Color.WHITE);
-            customerButton.setBorder(null);
-            customerButton.setBounds(buttonX,buttonY,250,125);
-            add(customerButton);
-*/
+
 
             roomButton.setText("Rooms");
             roomButton.setOpaque(true);

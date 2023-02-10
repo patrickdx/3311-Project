@@ -30,19 +30,7 @@ public class RequestScreen extends Screen {
         container.setBounds(DefaultScreen.WIDTH/2 - 300,150,700,600);
         container.setBackground(new Color (250, 243, 222));
 
-        /* Example on how to add a request card. Should be moved to a container class.
-        RequestCard r1 = new RequestCard();
-        RequestCard r2 = new RequestCard();
 
-        r1.getRequestTypeLabel().setText("Linen");
-        r1.getRoomNumberLabel().setText("001");
-
-        r2.getRequestTypeLabel().setText("Service");
-        r2.getRoomNumberLabel().setText("201");
-        container.add(r1);
-        container.add(r2);
-
-         */
 
         container.setVisible(true);
         add(container);
