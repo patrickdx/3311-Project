@@ -22,9 +22,15 @@ public class Booking  {
         guests.add(person);
     }
     
-    public void addRequest(Request request, List<Request> allRequests){
-        requests.add(request);
-        allRequests.add(request);
+    public void addRequest(String message, List<Request> allRequests){
+    	Request r = new Request(message, this);
+    	requests.add(r);
+        allRequests.add(r);
+    }
+    public void addRequest(String message, float cost, List<Request> allRequests){
+    	Request r = new Request(message, cost, this);
+    	requests.add(r);
+        allRequests.add(r);
     }
 
     public void removeGuest(int customer_id) {
