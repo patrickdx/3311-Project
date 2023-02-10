@@ -23,4 +23,4 @@ Patrick: Worked on `Person` search functionality.
 Devesh: Worked on `Room` and `Request` package. `Customer` was dropped and the features were moved seperately into room and request.
 
 ### February 10
-Devesh: Completed the GUI interface.
+Devesh: Completed the `View` package. GUI is done for itr1.
