@@ -25,4 +25,5 @@ public class RoomSearch extends PredicateSearch<Room> {
     }
 
 
+
 }
