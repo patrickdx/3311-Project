@@ -39,3 +39,7 @@ Arian: Finished up the wiki page and added images.
 Devesh: Completed the `View` package. GUI is done for itr1.
 
 Temi: Set up controller classes for the GUI.
+
+### March 6
+Patrick: Items in storage inventory: As a manager, I want to view the list of items in storage.
+
