@@ -39,7 +39,7 @@ public class RoomCard extends JPanel{
 
     private static final Font FONT = new Font("Open Sans",Font.PLAIN,20);
 
-    RoomCard(){
+    public RoomCard(){
 
 
 

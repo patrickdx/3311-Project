@@ -21,9 +21,6 @@ public class Screen extends JPanel {
         backButton.setContentAreaFilled(false);
         backButton.setBorderPainted(false);
         add(backButton);
-
-
-
     }
 
     public JButton getBackButton() {return backButton;};

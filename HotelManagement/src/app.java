@@ -8,10 +8,7 @@ public class app {
 
         //creating and showing this application's GUI.
 
-        DefaultScreen  defaultScreen = new DefaultScreen();
-        ApplicationController app_controller = new ApplicationController(defaultScreen);
-        defaultScreen.setVisible(true);
-
+        new ApplicationController();
 
     }
 }

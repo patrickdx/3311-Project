@@ -1,8 +1,5 @@
 package controller;
 import view.MainMenu;
-import view.customer.CustomerScreen;
-import view.room.RoomCard;
-import view.DefaultScreen;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -42,7 +39,7 @@ public class MainMenuController implements ActionListener {
 */
          
 		}else if(e.getSource() == main.getRequestButton()){
-			ApplicationController.screenSwitching(ApplicationController.screens[TypeOfScreen.REGISTER_SCREEN.getNumber()]);
+			ApplicationController.screenSwitching(ApplicationController.screens[TypeOfScreen.REQUEST_SCREEN.getNumber()]);
 		}
 
 	}

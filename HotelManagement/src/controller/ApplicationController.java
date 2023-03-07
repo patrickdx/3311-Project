@@ -20,25 +20,53 @@ public class ApplicationController {
     public static RoomScreenController roomController;
 
 
-    public ApplicationController(DefaultScreen defaultScreen) {
-        this.defaultScreen = defaultScreen;
+    public ApplicationController() {
+        defaultScreen = new DefaultScreen();
 
-
+        // Initializing all screens
         screens[TypeOfScreen.MAIN_MENU_SCREEN.getNumber()] = new MainMenu();
         screens[TypeOfScreen.ROOM_SCREEN.getNumber()] = new RoomScreen();
-        screens[TypeOfScreen.REGISTER_SCREEN.getNumber()] = new RequestScreen();
+        screens[TypeOfScreen.REQUEST_SCREEN.getNumber()] = new RequestScreen();
 
+
+
+
+        // Creating controllers
         mainMenuController = new MainMenuController((MainMenu) screens[TypeOfScreen.MAIN_MENU_SCREEN.getNumber()]);
         roomController = new RoomScreenController((RoomScreen) screens[TypeOfScreen.ROOM_SCREEN.getNumber()]);
-        requestController = new RequestController((RequestScreen) screens[TypeOfScreen.REGISTER_SCREEN.getNumber()]);
+        requestController = new RequestController((RequestScreen) screens[TypeOfScreen.REQUEST_SCREEN.getNumber()]);
 
-        screenSwitching(screens[TypeOfScreen.MAIN_MENU_SCREEN.getNumber()]);
+        //screenSwitching(screens[TypeOfScreen.MAIN_MENU_SCREEN.getNumber()]);
+
+        // Setting up back button
+        setupBackButton();
+
+        defaultScreen.add(screens[TypeOfScreen.MAIN_MENU_SCREEN.getNumber()]);
+        defaultScreen.setVisible(true);
+
+        System.out.println("Application started");
 
     }
-    public static void screenSwitching(JPanel Nscreen){
+
+    private void setupBackButton() {
+        for(int i = 0; i < TypeOfScreen.values().length -1; i++){
+
+            screens[i].getBackButton().addActionListener(e ->
+                    screenSwitching(screens[TypeOfScreen.MAIN_MENU_SCREEN.getNumber()]
+                    )
+
+                    );
+            
+
+        }
+    }
+
+    public static void screenSwitching(JPanel newScreen){
+        System.out.println(newScreen);
         defaultScreen.getContentPane().removeAll();
         defaultScreen.getContentPane().repaint();
-        defaultScreen.getContentPane().add(Nscreen);
+        defaultScreen.getContentPane().add(newScreen);
+
     }
 
 
