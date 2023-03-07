@@ -42,8 +42,8 @@ Temi: Set up controller classes for the GUI.
 
 ### March 6
 Assigned tasks:
-Patrick: Items in storage inventory: As a manager, I want to view the list of items in storage.
-Temi: Increase/Decrease Inventories: As a receptionist, I need to increase or decrease inventories if things get restocked or need to be restocked
-Vesh: Items -> Room inventory, "As a receptionist I need to view the list of items in each room"
-Edward:  Max per item in room inventory. "As a caretaker, I need to know how much of each item I should resupply/supply in each room"
+- Patrick: Items in storage inventory: As a manager, I want to view the list of items in storage.
+- Temi: Increase/Decrease Inventories: As a receptionist, I need to increase or decrease inventories if things get restocked or need to be restocked
+- Vesh: Items -> Room inventory, "As a receptionist I need to view the list of items in each room"
+- Edward:  Max per item in room inventory. "As a caretaker, I need to know how much of each item I should resupply/supply in each room"
 
