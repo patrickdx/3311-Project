@@ -52,15 +52,14 @@ public class ApplicationController {
             screens[i].getBackButton().addActionListener(e ->
                     screenSwitching(screens[TypeOfScreen.MAIN_MENU_SCREEN.getNumber()]
                     )
-
             );
-
 
         }
     }
 
     public static void screenSwitching(JPanel newScreen) {
         System.out.println(newScreen);
+        newScreen.setVisible(true);
         defaultScreen.getContentPane().removeAll();
         defaultScreen.getContentPane().repaint();
         defaultScreen.getContentPane().add(newScreen);

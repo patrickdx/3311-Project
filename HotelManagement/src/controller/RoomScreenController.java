@@ -9,22 +9,14 @@ import view.room.RoomCard;
 import view.room.RoomScreen;
 import javax.swing.*;
 
-
-
-
-
 public class RoomScreenController implements ActionListener{
 	
 	public RoomScreen room;
 
-	
-	
 	public RoomScreenController(RoomScreen room) {
 		this.room = room;
 		setupListeners();
 	}
-
-	
 
 	private void setupListeners() {
 		// TODO Auto-generated method stub
@@ -53,14 +45,12 @@ public class RoomScreenController implements ActionListener{
 			roomCard1.setVisible(false);
 		}
 
-		//if(room.getSearchRoomButton().isSelected())
-		//new OptionPane();
+		if(room.getSearchRoomButton().isSelected())
+		new OptionPane();
 		
 
-		//container.add(roomCard1);
-        //container.add(roomCard2);
-        //container.add(roomCard3);
-		//System.out.print("Buton pressed!");
+
+		System.out.print("Buton pressed!");
 	}
 	public class OptionPane {  
 		JFrame f;  
