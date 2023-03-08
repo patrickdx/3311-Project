@@ -21,7 +21,7 @@ public class RoomScreen extends Screen {
 
     private JButton showEmptyRoomsButton = new JButton();
 
-    private JPanel container = new JPanel();
+    private static JPanel container = new JPanel();
 
 
     private static final Font FONT = new Font("Open Sans",Font.PLAIN,20);
@@ -71,7 +71,7 @@ public class RoomScreen extends Screen {
 
     public JLabel getTitleLabel(){return titleLabel;}
 
-    private JPanel getRoomContainer() {return container;}
+    public static JPanel getRoomContainer() {return container;}
 
     public JButton getEmptyRoomsButton(){return viewEmptyRoomsButton;}
    // public JButton getNumberOfEmptyRoomsButton(){return viewNumberOfEmptyRoomsButton;}
