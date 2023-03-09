@@ -59,11 +59,15 @@ public class ApplicationController {
 
     public static void screenSwitching(JPanel newScreen) {
         System.out.println(newScreen);
-        newScreen.setVisible(true);
         defaultScreen.getContentPane().removeAll();
         defaultScreen.getContentPane().repaint();
         defaultScreen.getContentPane().add(newScreen);
+        newScreen.revalidate();
 
+    }
+
+    public static void repaint(){
+        defaultScreen.repaint();
     }
 }
 
