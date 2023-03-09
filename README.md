@@ -47,3 +47,7 @@ Assigned tasks:
 - Vesh: Items -> Room inventory, "As a receptionist I need to view the list of items in each room"
 - Edward:  Max per item in room inventory. "As a caretaker, I need to know how much of each item I should resupply/supply in each room"
 
+
+
+### March 9
+Temi: Made some adjustments to some screen buttons on the GUI to perform planned functionalities and added the db 
