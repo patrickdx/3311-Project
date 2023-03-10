@@ -1,15 +1,56 @@
-# 3311-Project
+# HotelManagement Project work logs
 
-# What's new?
+### Feburary 6
 
-Here in this iteration, we have set up some basic functionality. Users will be able to access two pages from the main menu. Here users can check the requests page and the rooms page.
+Patrick: Started inital version of RoomManagement, created classes and some basic functionality.
 
-![image](https://user-images.githubusercontent.com/77425637/218041274-aa06a927-b24b-4d85-8d0b-672d4d39df84.png)
+Devesh : Created seperate folders for model , view and controller design pattern. Started development on GUI.
 
-Within the room page, we show all the available and unavailable rooms, for the user to better serve the customer in an organized fashion. Users can then go into each room and complete various tasks like adding customers, extending stays, removing customers, or simply viewing that room's information. Users can also search rooms based on availability, names, and more.
+Team Meeting: Discussion of what needs to be done, and what type of GUI will be used.
 
-![image](https://user-images.githubusercontent.com/77425637/218042134-b890c5da-603d-4b79-b1c3-27e385795d92.png)
+### February 7
 
-For the requests page, users can view and add requests sent to them, to keep them all organized. When completed, the user can remove requests to keep track of what requests have been completed, and what requests have not been completed or cancelled.
+Devesh: Created a MainMenu class and laid out some button components. TODO: Create seperate classes for a default window and finish main menu window.
 
-![image](https://user-images.githubusercontent.com/77425637/218042827-42084eca-c769-485e-8c7a-01bd6da1cd80.png)
+### February 8
+
+Devesh: Created a RoomScreen, CustomerScreen and RequestScreen class. Each are seperate windows for displaying options for the user. Added buttons and did some basic ui design as well.
+
+Patrick: Worked on search functionality, created builder class and intuitive method chain search
+
+Arian: Set up wiki page and completed partial write up
+
+### February 9
+
+Arian: Placed down set up for controller, and completed the `Request` page. Added small coupling between `Booking` and `Requests` to deal with requests and get room detail through connection.
+
+Patrick: Worked on `Person` search functionality.
+
+Devesh: Worked on `Room` and `Request` package. `Customer` was dropped and the features were moved seperately into room and request.
+
+Temi: Created instances for person(testing purposes).
+
+Team Meeting: Discussion of redesign on GUI to better suit iteration 1 requirements. Bit of redesign of model to views were discussed as there was initially a customers page that was not outlined in iteration 0.
+
+### February 10
+
+Arian: Finished up the wiki page and added images.
+
+Devesh: Completed the `View` package. GUI is done for itr1.
+
+Temi: Set up controller classes for the GUI.
+
+### March 6
+Assigned tasks:
+- Patrick: Items in storage inventory: As a manager, I want to view the list of items in storage.
+- Temi: Increase/Decrease Inventories: As a receptionist, I need to increase or decrease inventories if things get restocked or need to be restocked
+- Vesh: Items -> Room inventory, "As a receptionist I need to view the list of items in each room"
+- Edward:  Max per item in room inventory. "As a caretaker, I need to know how much of each item I should resupply/supply in each room"
+
+
+
+### March 9
+Temi: Made some adjustments to some screen buttons on the GUI to perform planned functionalities and added the db, implemented methods for the increasing and decreasing of items in inventory
+
+-Edward: Made a class that checks how much each item should be supplied in each room, added more tests in the ItemRepositoryTest class and made a controller class for roomInventory
+

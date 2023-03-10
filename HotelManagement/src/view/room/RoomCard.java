@@ -13,7 +13,7 @@ Author: Ramful Devesh
  */
 
 import Rooms.Room;
-import javafx.scene.layout.Border;
+import view.DefaultScreen;
 
 import javax.swing.*;
 import java.awt.*;
@@ -31,6 +31,8 @@ public class RoomCard extends JPanel{
     private JLabel roomBedNumberLabel = new JLabel();
     private JLabel roomRateLabel = new JLabel();
 
+    private JButton ItemListButton = new JButton();
+
     private Color green = new Color(0,255,127);
     private Color red = new Color(253, 138, 138);
 
@@ -39,7 +41,7 @@ public class RoomCard extends JPanel{
 
     private static final Font FONT = new Font("Open Sans",Font.PLAIN,20);
 
-    public RoomCard(){
+    public RoomCard(Room room){
 
 
 
@@ -48,12 +50,12 @@ public class RoomCard extends JPanel{
         setBorder(null);
 
 
-        roomNumberLabel.setText("Number: " + this.number);
+        roomNumberLabel.setText("Number: " + room.getRoomID());
         roomNumberLabel.setFont(FONT);
         roomNumberLabel.setBounds(50,50,20,20);
         add(roomNumberLabel);
 
-        roomBedNumberLabel.setText("Bed: " + this.bedNumber);
+        roomBedNumberLabel.setText("Bed: " + room.getType());
         roomBedNumberLabel.setFont(FONT);
         roomNumberLabel.setBounds(50,75,20,20);
         add(roomBedNumberLabel);
@@ -63,10 +65,18 @@ public class RoomCard extends JPanel{
         roomNumberLabel.setBounds(50,100,20,20);
         add(roomRateLabel);
 
-        roomStatusLabel.setText("Status: " + this.status);
+        roomStatusLabel.setText("Status: " + room.getStatus());
         roomStatusLabel.setFont(FONT);
         roomNumberLabel.setBounds(50,125,20,20);
         add(roomStatusLabel);
+
+        ItemListButton.setText("Items");
+        ItemListButton.setOpaque(true);
+        ItemListButton.setFont(FONT);
+        ItemListButton.setBackground(new  Color(157, 241, 223));
+        ItemListButton.setBorder(null);
+        ItemListButton.setBounds(DefaultScreen.WIDTH/2 - 450, 200, 100,50);
+        add(ItemListButton);
 
 
         setOpaque(true);
@@ -79,6 +89,8 @@ public class RoomCard extends JPanel{
     public JLabel getRoomRateLabel(){return roomRateLabel;}
     public JLabel getRoomStatusLabel(){return roomStatusLabel;}
     public JLabel getRoomBedNumberLabel(){return roomBedNumberLabel;}
+
+    public JButton getItemListButton() {return getItemListButton();}
 
 
 

@@ -1,6 +1,8 @@
-//import something.Main;
+
 import controller.ApplicationController;
-import view.DefaultScreen;
+import controller.DBController;
+//import view.DefaultScreen;
+
 
 public class app {
 
@@ -8,7 +10,10 @@ public class app {
 
         //creating and showing this application's GUI.
 
+        DBController.connect();
+
         new ApplicationController();
+
 
     }
 }

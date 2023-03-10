@@ -1,0 +1,49 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "app",
+            "request": "launch",
+            "mainClass": "app",
+            "projectName": "3311-Project_222051db"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Rooms.Main",
+            "projectName": "3311-Project_2bcfeaee"
+        },
+        {
+            "type": "java",
+            "name": "RoomRepository",
+            "request": "launch",
+            "mainClass": "Rooms.RoomRepository",
+            "projectName": "3311-Project_2bcfeaee"
+        },
+        {
+            "type": "java",
+            "name": "app",
+            "request": "launch",
+            "mainClass": "app",
+            "projectName": "3311-Project_2bcfeaee"
+        },
+        {
+            "type": "java",
+            "name": "test_playground",
+            "request": "launch",
+            "mainClass": "test.test_playground",
+            "projectName": "3311-Project_2bcfeaee"
+        }
+    ]
+}

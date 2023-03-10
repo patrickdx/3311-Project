@@ -5,7 +5,6 @@ public enum TypeOfScreen {
     
     MAIN_MENU_SCREEN(0),
     ROOM_SCREEN(1),
-    //CUSTOMER_SCREEN(2),
     REQUEST_SCREEN(2);
 
 

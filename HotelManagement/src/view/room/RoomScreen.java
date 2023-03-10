@@ -21,7 +21,7 @@ public class RoomScreen extends Screen {
 
     private JButton showEmptyRoomsButton = new JButton();
 
-    private static JPanel container = new JPanel();
+    private  JPanel container = new JPanel();
 
 
     private static final Font FONT = new Font("Open Sans",Font.PLAIN,20);
@@ -34,7 +34,7 @@ public class RoomScreen extends Screen {
 
 
 
-        container.setVisible(true);
+        //container.setVisible(true);
         add(container);
 
         ImageIcon searchIcon = new ImageIcon("HotelManagement/lib/search.png");
@@ -71,7 +71,7 @@ public class RoomScreen extends Screen {
 
     public JLabel getTitleLabel(){return titleLabel;}
 
-    public static JPanel getRoomContainer() {return container;}
+    public  JPanel getRoomContainer() {return container;}
 
     public JButton getEmptyRoomsButton(){return viewEmptyRoomsButton;}
    // public JButton getNumberOfEmptyRoomsButton(){return viewNumberOfEmptyRoomsButton;}

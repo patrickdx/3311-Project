@@ -29,8 +29,6 @@ public class ApplicationController {
         screens[TypeOfScreen.REQUEST_SCREEN.getNumber()] = new RequestScreen();
 
 
-
-
         // Creating controllers
         mainMenuController = new MainMenuController((MainMenu) screens[TypeOfScreen.MAIN_MENU_SCREEN.getNumber()]);
         roomController = new RoomScreenController((RoomScreen) screens[TypeOfScreen.ROOM_SCREEN.getNumber()]);
@@ -49,27 +47,26 @@ public class ApplicationController {
     }
 
     private void setupBackButton() {
-        for(int i = 0; i < TypeOfScreen.values().length -1; i++){
+        for (int i = 0; i < TypeOfScreen.values().length - 1; i++) {
 
             screens[i].getBackButton().addActionListener(e ->
                     screenSwitching(screens[TypeOfScreen.MAIN_MENU_SCREEN.getNumber()]
                     )
 
-                    );
-            
+            );
+
 
         }
     }
 
-    public static void screenSwitching(JPanel newScreen){
+    public static void screenSwitching(JPanel newScreen) {
         System.out.println(newScreen);
+        newScreen.setVisible(true);
         defaultScreen.getContentPane().removeAll();
         defaultScreen.getContentPane().repaint();
         defaultScreen.getContentPane().add(newScreen);
 
     }
-
-
-
 }
+
 

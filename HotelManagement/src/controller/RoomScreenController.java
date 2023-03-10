@@ -1,30 +1,45 @@
 package controller;
 
-import java.awt.Container;
 import java.awt.event.ActionEvent;
 
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
+import Inventory.Item;
+import Inventory.ItemRepository;
+import Rooms.Room;
 import view.room.RoomCard;
 import view.room.RoomScreen;
 import javax.swing.*;
 
-
-
-
-
 public class RoomScreenController implements ActionListener{
 	
 	public RoomScreen room;
+	public DBController db;
 
-	
-	
+	private ArrayList<Room> roomList;
+
+	private ArrayList<RoomCard> roomCards;
+
+
 	public RoomScreenController(RoomScreen room) {
+
+		roomList = db.getRooms();
+
+		for(int i = 0; i < roomList.size(); i++){
+			roomCards.set(i, new RoomCard(roomList.get(i)));
+		}
+
+		for(int i = 0; i < roomCards.size(); i++){
+			room.getRoomContainer().add(roomCards.get(i));
+		}
+
+
 		this.room = room;
 		setupListeners();
-	}
 
-	
+
+	}
 
 	private void setupListeners() {
 		// TODO Auto-generated method stub
@@ -38,33 +53,42 @@ public class RoomScreenController implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
-		RoomCard roomCard1 = new RoomCard();
-        RoomCard roomCard2 = new RoomCard();
-        RoomCard roomCard3 = new RoomCard();
 
-		RoomScreen.getRoomContainer().add(roomCard1);
-		RoomScreen.getRoomContainer().add(roomCard2);
-		RoomScreen.getRoomContainer().add(roomCard3);
+
+
+
+
+		//RoomScreen.getRoomContainer().add(roomCard1);
+		//RoomScreen.getRoomContainer().add(roomCard2);
+		//RoomScreen.getRoomContainer().add(roomCard3);
+
+
 
 		if(e.getSource() == room.getSearchRoomButton()){
-			new OptionPane();
+			new OptionPane1();
 		}
 		else if (e.getSource() == room.getEmptyRoomsButton()){
-			roomCard1.setVisible(false);
+			room.getRoomContainer().setVisible(false);
 		}
 
-		//if(room.getSearchRoomButton().isSelected())
-		//new OptionPane();
+		if(room.getSearchRoomButton().isSelected())
+		new OptionPane1();
+
+		// Ability to view items in a room
+
+		for(int i = 0; i < roomList.size(); i++){
+			if(e.getSource() == roomCards.get(i).getItemListButton()){
+				new OptionPane2(roomList.get(i).getItem());
+			}
+		}
 		
 
-		//container.add(roomCard1);
-        //container.add(roomCard2);
-        //container.add(roomCard3);
-		//System.out.print("Buton pressed!");
+
+		System.out.print("Buton pressed!");
 	}
-	public class OptionPane {  
+	public class OptionPane1 {
 		JFrame f;  
-		OptionPane(){  
+		OptionPane1(){
 			f=new JFrame();   
 			String name=JOptionPane.showInputDialog(f,"Enter Room");      
 		}  
@@ -76,6 +100,19 @@ public class RoomScreenController implements ActionListener{
 		//	new OptionPane();  
 		//}  
 
+}
+
+public class OptionPane2{
+	JFrame f;
+
+	public OptionPane2(ItemRepository item) {
+	}
+
+
+	void OptionPane1(ItemRepository item){
+		f = new JFrame();
+		JOptionPane.showMessageDialog(null, "Items");
+	}
 }
 }
 
