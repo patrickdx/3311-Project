@@ -51,9 +51,6 @@ public class RequestScreen extends Screen {
         addRequestButton.setBounds(X+400,100,50,50);
         add(addRequestButton);
 
-
-
-
     }
 
     public JLabel getTitleLabel(){return titleLabel;}

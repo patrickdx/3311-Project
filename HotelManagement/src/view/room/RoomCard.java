@@ -13,14 +13,12 @@ Author: Ramful Devesh
  */
 
 import Rooms.Room;
-//import javafx.scene.layout.Border;
+import javafx.scene.layout.Border;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class RoomCard extends JPanel{
-
-    Room room;
 
     private String number;
     private String status;
@@ -38,17 +36,16 @@ public class RoomCard extends JPanel{
 
 
 
+
     private static final Font FONT = new Font("Open Sans",Font.PLAIN,20);
 
-    public RoomCard(Room room){
+    public RoomCard(){
 
-        this.room = room;
-        setPreferredSize(new Dimension(500, 50));
 
+
+        setPreferredSize(new Dimension(500,50));
+        setForeground(Color.white);
         setBorder(null);
-
-
-       // setForeground(Color.white);
 
 
         roomNumberLabel.setText("Number: " + this.number);
@@ -56,17 +53,17 @@ public class RoomCard extends JPanel{
         roomNumberLabel.setBounds(50,50,20,20);
         add(roomNumberLabel);
 
-        roomBedNumberLabel.setText("Bed: " + this.room.getType().getSize());
+        roomBedNumberLabel.setText("Bed: " + this.bedNumber);
         roomBedNumberLabel.setFont(FONT);
         roomNumberLabel.setBounds(50,75,20,20);
         add(roomBedNumberLabel);
 
-        roomRateLabel.setText("Rate: " + this.room.getType().getRate());
+        roomRateLabel.setText("Rate: " + this.rate);
         roomRateLabel.setFont(FONT);
         roomNumberLabel.setBounds(50,100,20,20);
         add(roomRateLabel);
 
-        roomStatusLabel.setText("Status: " + this.room.getStatus());
+        roomStatusLabel.setText("Status: " + this.status);
         roomStatusLabel.setFont(FONT);
         roomNumberLabel.setBounds(50,125,20,20);
         add(roomStatusLabel);
@@ -75,30 +72,13 @@ public class RoomCard extends JPanel{
         setOpaque(true);
         setVisible(true);
 
-        if (room.isBooked()){
-            setBackground(Color.RED);
-        }else{
-            setBackground(Color.GREEN);
-        }
-
 
     }
 
-    public JLabel getRoomNumberLabel() {
-        return roomNumberLabel;
-    }
-
-    public JLabel getRoomRateLabel() {
-        return roomRateLabel;
-    }
-
-    public JLabel getRoomStatusLabel() {
-        return roomStatusLabel;
-    }
-    
-    public JLabel getRoomBedNumberLabel() {
-        return roomBedNumberLabel;
-    }
+    public JLabel getRoomNumberLabel(){return roomNumberLabel;}
+    public JLabel getRoomRateLabel(){return roomRateLabel;}
+    public JLabel getRoomStatusLabel(){return roomStatusLabel;}
+    public JLabel getRoomBedNumberLabel(){return roomBedNumberLabel;}
 
 
 

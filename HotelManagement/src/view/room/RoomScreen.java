@@ -15,12 +15,13 @@ import java.awt.*;
 
 public class RoomScreen extends Screen {
     private JLabel titleLabel = new JLabel("Room ");
+    private JButton viewEmptyRoomsButton = new JButton();
 
     private JButton searchRoomButton = new JButton();
 
     private JButton showEmptyRoomsButton = new JButton();
 
-    private JPanel container = new JPanel();
+    private  JPanel container = new JPanel();
 
 
     private static final Font FONT = new Font("Open Sans",Font.PLAIN,20);
@@ -30,6 +31,8 @@ public class RoomScreen extends Screen {
 
         container.setBounds(DefaultScreen.WIDTH/2 - 300,150,700,600);
         container.setBackground(new Color (250, 243, 222));
+
+
 
         //container.setVisible(true);
         add(container);
@@ -68,10 +71,9 @@ public class RoomScreen extends Screen {
 
     public JLabel getTitleLabel(){return titleLabel;}
 
-    public JPanel getRoomContainer() {return container;}
+    public  JPanel getRoomContainer() {return container;}
 
-    public JButton getEmptyRoomsButton(){return showEmptyRoomsButton;}
-    
+    public JButton getEmptyRoomsButton(){return viewEmptyRoomsButton;}
    // public JButton getNumberOfEmptyRoomsButton(){return viewNumberOfEmptyRoomsButton;}
 
     public JButton getSearchRoomButton(){return searchRoomButton;}
