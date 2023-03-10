@@ -51,5 +51,6 @@ Assigned tasks:
 
 ### March 9
 Temi: Made some adjustments to some screen buttons on the GUI to perform planned functionalities and added the db, implemented methods for the increasing and decreasing of items in inventory
+
 -Edward: Made a class that checks how much each item should be supplied in each room and added more tests in the ItemRepositoryTest class
 
