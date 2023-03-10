@@ -62,5 +62,6 @@ Temi: Made some adjustments to some screen buttons on the GUI to perform planned
 -Edward: Made a class that checks how much each item should be supplied in each room, added more tests in the ItemRepositoryTest class and made a controller class for roomInventory
 
 - Devesh: Added a view item list button for each room so that a user can get a list of items in a room.
+- Patrick: Added `RoomIventory` and added new `RoomTier`s to each room, specifying the amentities they each get, and refactoringf.
 
 
