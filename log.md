@@ -39,3 +39,10 @@ Arian: Finished up the wiki page and added images.
 Devesh: Completed the `View` package. GUI is done for itr1.
 
 Temi: Set up controller classes for the GUI.
+
+### March 8
+
+Devesh: Fixed the GUI related issues such as back button not working and room view not displaying.
+
+### March 9
+Devesh: Added a view items button so that receptionist can view the number of items in a room.
