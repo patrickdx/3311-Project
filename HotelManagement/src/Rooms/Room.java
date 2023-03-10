@@ -2,8 +2,10 @@ package Rooms;
 
 import Inventory.Item;
 import Inventory.ItemRepository;
+import Inventory.RoomTier;
 
 public class Room { // single, double, suites, presidential_suites ...
+    public RoomTier tier;
     public RoomType type;   // rate/size is inferred from RoomType
     public int room_id;
     public boolean isBooked;
