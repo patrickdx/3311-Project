@@ -12,7 +12,7 @@ public class DBController {
     private static Statement st;
     private static String query;
     private static final String DATABASE_NAME = "hotelmanagementdb";
-    private static final String USERNAME = "admin";
+    private static final String USERNAME = "root";
     private static final String PASSWORD = "Confirm2.";
 
     public static void connect(){

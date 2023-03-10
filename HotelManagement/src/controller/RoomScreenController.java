@@ -43,7 +43,7 @@ public class RoomScreenController implements ActionListener{
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
+		//TODO Auto-generated method stub
 		/*RoomCard roomCard1 = new RoomCard();
         RoomCard roomCard2 = new RoomCard();
         RoomCard roomCard3 = new RoomCard();
@@ -55,11 +55,11 @@ public class RoomScreenController implements ActionListener{
 		if(e.getSource() == room.getSearchRoomButton()){
 			try{
                 int room_num = Integer.parseInt(JOptionPane.showInputDialog("Enter Room Number: "));
-                RoomScreen.getRoomContainer().removeAll();
+                room.getRoomContainer().removeAll();
                 for (Room r : allRooms) {
                     if (r.getRoomID() == room_num) {
                         RoomCard roomCard = new RoomCard(r);
-                        RoomScreen.getRoomContainer().add(roomCard);
+                        room.getRoomContainer().add(roomCard);
                     }
                 }
                 room.revalidate();
@@ -69,11 +69,11 @@ public class RoomScreenController implements ActionListener{
             }
 		}
 		else if (e.getSource() == room.getEmptyRoomsButton()){
-			RoomScreen.getRoomContainer().removeAll();
+			room.getRoomContainer().removeAll();
             for (Room r : allRooms) {
                 if (!r.isBooked()) {
                     RoomCard roomCard = new RoomCard(r);
-                    RoomScreen.getRoomContainer().add(roomCard);
+                    room.getRoomContainer().add(roomCard);
                 }
             }
             room.revalidate();

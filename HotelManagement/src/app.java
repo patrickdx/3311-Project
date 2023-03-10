@@ -1,7 +1,7 @@
 
 import controller.ApplicationController;
 import controller.DBController;
-import view.DefaultScreen;
+//import view.DefaultScreen;
 
 
 public class app {
