@@ -40,6 +40,11 @@ Devesh: Completed the `View` package. GUI is done for itr1.
 
 Temi: Set up controller classes for the GUI.
 
+## February 25
+
+Client meeting occured where iteration 3 was discussed and new user stories added. The minutes are on the client meeting file.
+
+
 ### March 6
 Assigned tasks:
 - Patrick: Items in storage inventory: As a manager, I want to view the list of items in storage.
@@ -47,10 +52,15 @@ Assigned tasks:
 - Vesh: Items -> Room inventory, "As a receptionist I need to view the list of items in each room"
 - Edward:  Max per item in room inventory. "As a caretaker, I need to know how much of each item I should resupply/supply in each room"
 
+### March 8
 
+Devesh: Fixed the GUI related issues such as back button not working and room view not displaying.
 
 ### March 9
 Temi: Made some adjustments to some screen buttons on the GUI to perform planned functionalities and added the db, implemented methods for the increasing and decreasing of items in inventory
 
 -Edward: Made a class that checks how much each item should be supplied in each room, added more tests in the ItemRepositoryTest class and made a controller class for roomInventory
+
+- Devesh: Added a view item list button for each room so that a user can get a list of items in a room.
+
 
