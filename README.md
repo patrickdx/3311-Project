@@ -13,3 +13,7 @@ Within the room page, we show all the available and unavailable rooms, for the u
 For the requests page, users can view and add requests sent to them, to keep them all organized. When completed, the user can remove requests to keep track of what requests have been completed, and what requests have not been completed or cancelled.
 
 ![image](https://user-images.githubusercontent.com/77425637/218042827-42084eca-c769-485e-8c7a-01bd6da1cd80.png)
+
+Along with the database, we have also added `Inventory` functionality for the hotel, this includes:
+- Tracking how many items should a room get based on its `Tier`. Rooms with high tiers would contain more expensive amenities.
+- Tracking the total inventory in `InventoryRepository`. 
