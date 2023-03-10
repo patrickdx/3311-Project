@@ -40,6 +40,10 @@ Devesh: Completed the `View` package. GUI is done for itr1.
 
 Temi: Set up controller classes for the GUI.
 
+### February 25
+
+Client meeting occured where iteration 3 was discussed and new user stories added. The minutes are on the client meeting file.
+
 ### March 8
 
 Devesh: Fixed the GUI related issues such as back button not working and room view not displaying.
