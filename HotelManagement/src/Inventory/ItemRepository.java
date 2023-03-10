@@ -25,4 +25,13 @@ public class ItemRepository {
         }
 
     }
+
+ //increasing items in inventory
+    public void addStockToInventory(Item item, int qty){
+        inv.replace(item, checkStock(item)+qty);
+    }
+    //decreasing items from inventory
+    public void removeFromStockInventory(Item item, int qty){
+        inv.replace(item, checkStock(item)-qty);
+    }
 }
